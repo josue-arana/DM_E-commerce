@@ -1,0 +1,19 @@
+{
+  "name": "doris_ecommerce",
+  "version": "1.0.0",
+  "description": "________",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josue-arana/DM_E-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josue-arana/DM_E-commerce/issues"
+  },
+  "homepage": "https://github.com/josue-arana/DM_E-commerce#readme"
+}
