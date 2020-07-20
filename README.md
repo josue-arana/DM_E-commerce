@@ -3,9 +3,6 @@
 
 ________
 
-# Live Previews: 
-## https://mdbootstrap.com/freebies/jquery/e-commerce/
-
 # Most important features:
 
 1. Fully responsive
