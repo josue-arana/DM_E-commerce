@@ -7,17 +7,9 @@ ________
 
 1. Fully responsive
 
-2. Plenty of useful components
+2. Easy to use and customize
 
-3. Easy installation
-
-4. Easy to use and customize
-
-5. Active community
-
-6. Dedicated support forum
-
-7. Detailed documentation
+3. Purchase checkout
 
 
 **Main Source**: https://mdbootstrap.com/previews/free-templates/ecommerce/home-page.html
