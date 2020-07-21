@@ -19,6 +19,17 @@
 </head>
 
 <body class="grey lighten-3">
+    <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <p>This example displays a vertical translate button.</p>
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
@@ -51,8 +62,21 @@
           <li class="nav-item">
             <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free download</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free tutorials</a>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle waves-light" id="navbarDropdownMenuLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Change Language</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a> <div class="dropdown-item" id="google_translate_element" ></div></a>
+                <a class="dropdown-item" href="#digital_art">Digital Artwork</a>
+            </div>
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+              }
+              </script>
+              
+              <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </li>
         </ul>
 
@@ -95,6 +119,7 @@
 
       <!-- Heading -->
       <h2 class="my-5 h2 text-center">Checkout form</h2>
+      
 
       <!--Grid row-->
       <div class="row">
@@ -117,7 +142,7 @@
                   <!--firstName-->
                   <div class="md-form ">
                     <input type="text" id="firstName" class="form-control">
-                    <label for="firstName" class="">First name</label>
+                    <label for="firstName" class="">First name / Primer Nombre</label>
                   </div>
 
                 </div>
@@ -129,7 +154,7 @@
                   <!--lastName-->
                   <div class="md-form">
                     <input type="text" id="lastName" class="form-control">
-                    <label for="lastName" class="">Last name</label>
+                    <label for="lastName" class="">Last name / Apellido </label>
                   </div>
 
                 </div>
@@ -139,7 +164,7 @@
               <!--Grid row-->
 
               <!--Username-->
-              <div class="md-form input-group pl-0 mb-5">
+              <div class="md-form input-group pl-0 mb-5" style="display: none">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon1">@</span>
                 </div>
@@ -155,13 +180,13 @@
               <!--address-->
               <div class="md-form mb-5">
                 <input type="text" id="address" class="form-control" placeholder="1234 Main St">
-                <label for="address" class="">Address</label>
+                <label for="address" class="">Address / Dirección </label>
               </div>
 
               <!--address-2-->
               <div class="md-form mb-5">
                 <input type="text" id="address-2" class="form-control" placeholder="Apartment or suite">
-                <label for="address-2" class="">Address 2 (optional)</label>
+                <label for="address-2" class="">Address 2 / Segunda dirección</label>
               </div>
 
               <!--Grid row-->
@@ -212,34 +237,36 @@
               </div>
               <!--Grid row-->
 
-              <hr>
+              <!-- <hr> -->
 
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="same-address">
                 <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
               </div>
-              <div class="custom-control custom-checkbox">
+              <div class="custom-control custom-checkbox" style="display:none">
                 <input type="checkbox" class="custom-control-input" id="save-info">
                 <label class="custom-control-label" for="save-info">Save this information for next time</label>
               </div>
 
-              <hr>
-
-              <div class="d-block my-3">
-                <div class="custom-control custom-radio">
-                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                  <label class="custom-control-label" for="credit">Credit card</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="debit">Debit card</label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                  <label class="custom-control-label" for="paypal">Paypal</label>
+              <!-- <hr> -->
+              <div style="display:none" >
+                <div class="d-block my-3" style="display:none">
+                  <div class="custom-control custom-radio">
+                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="credit">Credit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="debit">Debit card</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="paypal">Paypal</label>
+                  </div>
                 </div>
               </div>
-              <div class="row">
+
+              <div class="row" style="display:none">
                 <div class="col-md-6 mb-3">
                   <label for="cc-name">Name on card</label>
                   <input type="text" class="form-control" id="cc-name" placeholder="" required>
@@ -256,7 +283,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" style="display:none">
                 <div class="col-md-3 mb-3">
                   <label for="cc-expiration">Expiration</label>
                   <input type="text" class="form-control" id="cc-expiration" placeholder="" required>

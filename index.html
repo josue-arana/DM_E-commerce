@@ -47,7 +47,6 @@
 </head>
 
 <body>
-
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div class="container">
@@ -118,6 +117,7 @@
     </div>
   </nav>
   <!-- Navbar -->
+  
 
   <!--Carousel Wrapper-->
   <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
@@ -338,26 +338,29 @@
           <div class="col col-lg-3 col-md-6 mb-4">
 
             <!--Card-->
-            <div class="card">
+            <div class="card" style="width:250px; height:250px" id="card_1" data-toggle="collapse" href="#card1_description" role="button" aria-expanded="false" aria-controls="card1_description"> 
 
               <!--Card image-->
               <div class="view overlay">
-                <img src="img/nail_example.jpg" class="card-img-top" alt="">
+                <img src="img/nail_example.jpg" class="card-img-top"  alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
               <!--Card image-->
 
+            </div>
+            <!--Card-->
+
               <!--Card content-->
               <div class="card-body text-center">
                 <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Nail Care</h5>
+                <a  class="grey-text">
+                  <!-- <h5>Nail Care</h5> -->
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">Nail Hardener
+                    <a  class="dark-grey-text">Nail Hardener
                       <span class="badge badge-pill danger-color">NEW</span>
                     </a>
                   </strong>
@@ -370,8 +373,6 @@
               </div>
               <!--Card content-->
 
-            </div>
-            <!--Card-->
 
           </div>
           <!--Grid column-->
@@ -380,46 +381,176 @@
           <div class="col col-lg-3 col-md-6 mb-4">
 
             <!--Card-->
-            <div class="card">
+            <div class="card" style="width:250px; height:250px" id="card_2" data-toggle="collapse" href="#card2_description" role="button" aria-expanded="false" aria-controls="card2_description">
+
 
               <!--Card image-->
               <div class="view overlay">
-                <img src="img/shampoo_bottle.png" class="card-img-top" height="270px" alt="">
+                <img src="img/pomade_example.png" class="card-img-top" alt="">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
               <!--Card image-->
 
+            </div>
+            <!--Card-->
+
               <!--Card content-->
               <div class="card-body text-center">
                 <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5>Hair Care</h5>
+                <a  class="grey-text">
+                  <!-- <h5>Hair Care</h5> -->
                 </a>
                 <h5>
                   <strong>
-                    <a href="" class="dark-grey-text">Shampoo</a>
+                    <a  class="dark-grey-text">Shampoo</a>
                   </strong>
                 </h5>
 
                 <h4 class="font-weight-bold blue-text">
                   <strong>$15</strong>
                 </h4>
-
               </div>
               <!--Card content-->
 
-            </div>
-            <!--Card-->
 
           </div>
           <!--Grid column-->
           <div class="col col-lg-3 col-md-6 mb-4"></div>
 
+          <!-- <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div> -->
+            
+          <div class="collapse middle" id="card1_description" style="background-color:whitesmoke;padding-top:0%">
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+              <!--Grid column-->
+              <div class="col col-md-5 mb-4" style="text-align: center; vertical-align: middle;">
+                <img src="img/nail_example.jpg" class="img-fluid" style="padding:12px" alt="" width="400" length="400">
+              </div>
+              <!--Grid column-->
+              <div class="col col-md-7 mb-4">
+
+                <!--Content-->
+                <div class="p-4">
+                  <div class="mb-3">
+                    <a href="" style="display:none">
+                      <span class="badge purple mr-1">Category 2</span>
+                    </a>
+                    <a href="" style="display:none">
+                      <span class="badge blue mr-1">New</span>
+                    </a>
+                    <a href="">
+                      <span class="badge red mr-1">Bestseller</span>
+                    </a>
+                  </div>
+        
+                  <p class="lead">
+                    <span class="mr-1">
+                      <del>$200</del>
+                    </span>
+                    <span>$100</span>
+                  </p>
+        
+                  <p class="lead font-weight-bold">Nail Hardener</p>
+        
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
+                    sint voluptatibus!
+                    Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+                    
+        
+                    <div class="form-inline" style="padding-bottom: 20px;">
+                      <!-- <label class="control-label" style="padding-right: 8px;">Size: </label> -->
+                      <select class="form-control input-sm" >
+                        <option>12 oz</option>
+                        <option>20.4 oz</option>
+                      </select>
+                    </div>
+
+                  <form class="d-md-block justify-content-left">
+                    <!-- Default input -->
+                    
+                    <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px;padding-left: 20px;">
+
+                    <button class="btn btn-secondary btn-md my-0 p" style="padding-left: 20px;" type="submit">Add to cart
+                      <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+        
+                  </form>
+        
+                </div>
+                <!--Content-->
+        
+              </div>
+              <!--Grid column-->
+            </div>
+          </div>
+
+          <div class="collapse middle" id="card2_description" style="background-color:whitesmoke;">
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+              <!--Grid column-->
+              <div class="col col-md-5 mb-4" style="text-align: center;">
+                <img src="img/pomade_example.png" class="img-fluid" alt="" width="400" length="400">
+              </div>
+              <!--Grid column-->
+              <div class="col-md-7 mb-4">
+
+                <!--Content-->
+                <div class="p-4">
+                  <div class="mb-3">
+                    <a href="" style="display:none">
+                      <span class="badge purple mr-1">Category 2</span>
+                    </a>
+                    <a href="" style="display:none">
+                      <span class="badge blue mr-1">New</span>
+                    </a>
+                    <a href="">
+                      <span class="badge red mr-1">Bestseller</span>
+                    </a>
+                  </div>
+        
+                  <p class="lead">
+                    <span class="mr-1">
+                      <del>$200</del>
+                    </span>
+                    <span>$100</span>
+                  </p>
+        
+                  <p class="lead font-weight-bold">Anti-hairfall Shampoo</p>
+        
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
+                    sint voluptatibus!
+                    Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
+        
+                  <form class="d-flex justify-content-left">
+                    <!-- Default input -->
+                    <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
+                    <button class="btn btn-primary btn-md my-0 p" type="submit">Add to cart
+                      <i class="fas fa-shopping-cart ml-1"></i>
+                    </button>
+        
+                  </form>
+        
+                </div>
+                <!--Content-->
+        
+              </div>
+              <!--Grid column-->
+            </div>
+          </div>
+
+          
+
+
+          <!-- SECCOND ROW OF PRODUCTS -->
 
           <!--Grid row-->
-          <div class="row wow fadeIn">
+          <div class="row wow fadeIn" style="padding-top:30px">
             <!--Padding-->
             <div class="col col-lg-3 col-md-6 mb-4"></div>
             <!--Grid column-->
@@ -530,18 +661,6 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">2</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">3</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">4</a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#">5</a>
-          </li>
 
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Next">
@@ -555,68 +674,7 @@
 
     </div>
 
-      
-    <div class="middle" style="background-color:whitesmoke;">
-      <!-- <span class="helper"></span> -->
-      <!--Grid row-->
-      <div class="row wow fadeIn">
-  
-        <!--Grid column-->
-        <div class="col col-md-5 mb-4" style="text-align: center;">
-  
-          <img src="img/pomade_example.png" class="img-fluid" alt="" width="400" length="400">
-  
-        </div>
-        <!--Grid column-->
-        <div class="col-md-7 mb-4">
-  
-          <!--Content-->
-          <div class="p-4">
-  
-            <div class="mb-3">
-              <a href="" style="display:none">
-                <span class="badge purple mr-1">Category 2</span>
-              </a>
-              <a href="" style="display:none">
-                <span class="badge blue mr-1">New</span>
-              </a>
-              <a href="">
-                <span class="badge red mr-1">Bestseller</span>
-              </a>
-            </div>
-  
-            <p class="lead">
-              <span class="mr-1">
-                <del>$200</del>
-              </span>
-              <span>$100</span>
-            </p>
-  
-            <p class="lead font-weight-bold">Description</p>
-  
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolor suscipit libero eos atque quia ipsa
-              sint voluptatibus!
-              Beatae sit assumenda asperiores iure at maxime atque repellendus maiores quia sapiente.</p>
-  
-            <form class="d-flex justify-content-left">
-              <!-- Default input -->
-              <input type="number" value="1" aria-label="Search" class="form-control" style="width: 100px">
-              <button class="btn btn-primary btn-md my-0 p" type="submit">Add to cart
-                <i class="fas fa-shopping-cart ml-1"></i>
-              </button>
-  
-            </form>
-  
-          </div>
-          <!--Content-->
-  
-        </div>
-        <!--Grid column-->
-  
-      </div>
-  
-
-
+    
 
   </main>
   <!--Main layout-->
@@ -669,11 +727,47 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Initializations -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script type="text/javascript">
       // Animations initialization
       new WOW().init();
 
     </script>
+
+    <!-- Translate function -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+
+    <script type="text/javascript">
+
+      $('#card1_description').on('show.bs.collapse', function () {
+        // do something…
+        $('#card2_description').collapse('hide');
+      })
+
+      $('#card2_description').on('show.bs.collapse', function () {
+        // do something…
+        $('#card1_description').collapse('hide');
+      })
+
+      $('#card3_description').on('show.bs.collapse', function () {
+        // do something…
+        $('#card4_description').collapse('hide');
+      })
+      $('#card4_description').on('show.bs.collapse', function () {
+        // do something…
+        $('#card3_description').collapse('hide');
+      })
+
+
+
+    </script>
+
+
 </body>
 
 </html>
