@@ -58,16 +58,16 @@ html, body, #wrapper {
   position: relative;
 }
 .brand {
-  padding-top: 30px;
+  padding-top: 20px;
   position: absolute;
   left: 50%;
-  margin-left: -70px !important;  /* 50% of your logo width */
+  margin-left: -95px !important;  /* 50% of your logo width */
   display: block;
 }
 nav {
 
   height: 10vh;
-  
+
 }
 
 /* nav {
