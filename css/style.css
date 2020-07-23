@@ -22,6 +22,7 @@ body,
 .page-footer {
   background-color: #929FBA; }
 
+
 .light-purple {
   background-color: #9a79e0
 }
@@ -49,3 +50,45 @@ html, body, #wrapper {
   padding: 0;
   border: 0;
 }
+/* img {
+  border: 5px solid #555;
+} */
+
+.navbar {
+  position: relative;
+}
+.brand {
+  padding-top: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px !important;  /* 50% of your logo width */
+  display: block;
+}
+nav {
+
+  height: 10vh;
+  
+}
+
+/* nav {
+  background-color: rgba(253, 253, 253, 0.78); */
+  /* width: 80vw; */
+  /* height: 10vh; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* section {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  background-color: rgba(253, 253, 253, 0.78);
+   width: 80vw; 
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+*/
