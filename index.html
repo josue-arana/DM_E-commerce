@@ -16,6 +16,11 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/bootstrap-select.min.css">
+  
+
+
 
   <style type="text/css">
     html,
@@ -83,20 +88,19 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto" style="color:white; ">
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Shop
+            <a class="nav-link waves-effect" href="./index.html"> Shop
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="#" target="_blank">Products</a>
+            <a class="nav-link waves-effect" href="#products" target="_blank">Products</a>
           </li>
           <li class="nav-item">
             <a class="nav-link waves-effect" href="#"
               target="_blank">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="#" target="_blank">About
-              Us</a>
+            <a class="nav-link waves-effect" href="#" target="_blank">About Us</a>
           </li>
         </ul>
 
@@ -104,8 +108,8 @@
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link waves-effect">
+          <li class="nav-item" >
+            <a class="nav-link waves-effect" href="./checkout-page.html">
               <span class="badge red z-depth-1 mr-1"> 1 </span>
               <i class="fas fa-shopping-cart"></i>
               <span class="clearfix d-none d-sm-inline-block"> Cart </span>
@@ -222,7 +226,7 @@
                   available. Create your own, stunning website.</strong>
               </p> -->
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/"
+              <a href="#products"
                 class="btn btn-outline-white btn-lg">
                 Shop
                 <i class="fas fa-shopping-bag ml-2"></i>
@@ -266,7 +270,7 @@
                 </li>
               </ul>
 
-              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/"
+              <a href="#products"
                 class="btn btn-outline-white btn-lg">
                 Shop
                 <i class="fas fa-shopping-bag ml-2"></i>
@@ -346,7 +350,7 @@
       <!--/.Navbar-->
 
       <!--Section: Products v.3-->
-      <section class="text-center mb-4">
+      <section class="text-center mb-4" id="products">
 
         <!--------------    FIRST  ROW OF PRODUCTS    ---------->
         <div class="row wow fadeIn">
@@ -354,7 +358,6 @@
           <div class="col col-lg-3 col-md-6 mb-4"></div>
           <!-- 1 Product Column -->
           <div class="col col-lg-3 col-md-6 mb-4">
-
             <!-- 1st Card-->
             <div class="card" style="width:250px; height:250px" id="card_1" data-toggle="collapse" href="#card1_description" role="button" aria-expanded="false" aria-controls="card1_description"> 
 
@@ -807,6 +810,12 @@
         </ul>
       </nav>
       <!--Pagination-->
+      <!-- <select class="selectpicker countrypicker"
+        data-live-search="true"
+        data-default="United States"
+        data-default="United States"
+        data-flag="true">
+      </select> -->
 
 
 
@@ -855,7 +864,10 @@
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -864,6 +876,16 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Initializations -->
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+      <!-- JavaScript -->
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select-country.js"></script>
+    <script src="js/countrypicker.js"></script>
+
+
+
+
+
 
     <script type="text/javascript">
       // Animations initialization
