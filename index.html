@@ -55,6 +55,43 @@
         height: 100vh;
       }
     }
+    .menu {
+      float:left;
+      width:20%;
+      text-align:center;
+    }
+    .menu a {
+      background-color:#e5e5e5;
+      padding:8px;
+      margin-top:7px;
+      display:block;
+      width:100%;
+      color:black;
+    }
+    .main {
+      float:left;
+      width:60%;
+      padding:0 20px;
+    }
+    .right {
+      background-color:#e5e5e5;
+      float:left;
+      width:20%;
+      padding:15px;
+      margin-top:7px;
+      text-align:center;
+    }
+    @media only screen and (max-width:620px) {
+      /* For mobile phones: */
+      .menu, .main, .right {
+        width:100%;
+      }
+    }
+
+
+
+
+
   </style>
 </head>
 
@@ -349,7 +386,7 @@
           <!-- Padding left -->
           <div class="col col-lg-3 col-md-6 mb-4"></div>
           <!-- 1 Product Column -->
-          <div class="col col-lg-3 col-md-6 mb-4">
+          <div class="col col-lg-3 col-md-6 mb-4 carousel" style="align-self:center; align-items: center;">
             <!-- 1st Card-->
             <div class="card" style="width:250px; height:250px" id="card_1" data-toggle="collapse" href="#card1_description" role="button" aria-expanded="false" aria-controls="card1_description"> 
 
@@ -886,6 +923,11 @@
     <script type="text/javascript">
       // Animations initialization
       new WOW().init();
+
+      $("[data-toggle='toggle']").click(function() {
+          var selector = $(this).data("target");
+          $(selector).toggleClass('in');
+      });
 
     </script>
 
